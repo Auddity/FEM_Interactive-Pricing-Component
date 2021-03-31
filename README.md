@@ -1,4 +1,4 @@
-## Interactive Pricing Comonent Challenge
+## Interactive Pricing Component Challenge
 
 My solution to the Interactive Pricing Component Challenge.
 
