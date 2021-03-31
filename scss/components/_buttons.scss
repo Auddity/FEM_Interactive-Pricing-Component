@@ -1,0 +1,22 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as mx;
+
+.btn {
+  background-color: c.$headerTextCtaBg;
+  color: c.$ctaText;
+  font-weight: 600;
+  padding: 1rem 4rem;
+  margin: 1.3rem 0 1rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  @include mx.mqMinH(700px) {
+    margin: 1.8rem 0 1.6rem;
+  }
+  @include mx.mqMinH(1024px) {
+    margin: 2rem 0;
+  }
+
+  &:hover {
+    color: c.$white;
+  }
+}

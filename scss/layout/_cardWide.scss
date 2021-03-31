@@ -1,0 +1,63 @@
+@use '../abstracts/mixins' as mx;
+
+// Ipad and Desktops
+@include mx.mq(800px) {
+  .header {
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    p {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .card {
+    width: 650px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    h3 {
+      grid-row: 1 / span 1;
+      grid-column: 1 / span 1;
+    }
+
+    .perMonth-container {
+      grid-row: 1 / span 1;
+      grid-column: 2 / span 1;
+      padding: 1.8rem 0;
+      margin: 0;
+    }
+
+    .quantity-selector {
+      grid-column: 1 / span 2;
+      margin: 1.5rem 0 2.7rem;
+    }
+
+    .toggle-container {
+      grid-column: 1 / span 2;
+      margin: .5rem 0 .8rem;
+
+      & > p:first-child {
+        margin-left: 6.5rem;
+      }
+    }
+
+    .line {
+      grid-column: 1 / span 2;
+    }
+
+    .features-cta-container {
+      grid-column: 1 / span 2;
+      @include mx.flexCenter;
+      justify-content: space-around;
+      margin: 1rem 0;
+
+      .feature {
+        justify-content: flex-start;
+      }
+    }
+  }
+}

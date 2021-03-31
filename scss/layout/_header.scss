@@ -1,0 +1,33 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as mx;
+
+.header {
+  background-image: url('../images/pattern-circles.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  text-align: center;
+  line-height: 1.8;
+  padding: 4.5rem 0 2.5rem;
+  @include mx.mqMinH(700px) {
+    padding-top: 5rem;
+  }
+  
+
+  h1 {
+    color: c.$headerTextCtaBg;
+    font-size: 1.6rem;
+    font-weight: 800;
+    @include mx.mqMinH(700px) {
+      margin-bottom: .5rem;
+    }
+    @include mx.mqMinH(1024px) {
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    @include mx.mqMinH(1024px) {
+      font-size: 1.1rem;
+    }
+  }
+}
