@@ -8,7 +8,7 @@ const startBtn = document.getElementById('start-btn');
 const viewsArr = ['10K', '50K', '100K', '500K', '1M'];
 const costArr = ['8', '12', '16', '24', '36'];
 
-// Initial Page Open Values
+// Display Page Open Values
 document.addEventListener('DOMContentLoaded', () => {
   displayValues();
   updateSliderFillColor();
