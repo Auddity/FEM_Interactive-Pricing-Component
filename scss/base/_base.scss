@@ -16,10 +16,10 @@ html {
   background-image: url('../images/bg-pattern.svg');
   background-repeat: no-repeat;
   @include mx.mqMinH(1024px) {
-    font-size: 16px;
+    font-size: 15px;
   }
   @include mx.mq(1024px) {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
